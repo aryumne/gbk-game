@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kanit&family=Permanent+Marker&display=swap");
+
+/* Content */
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.wrapper {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.4rem;
+  margin-bottom: 30px;
+  color: black;
+  animation-name: headlineAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: 100;
+  animation-direction: alternate;
+}
+
+@keyframes headlineAnimation {
+  from {
+    color: black;
+  }
+  to {
+    color: darkorange;
+  }
+}
+
+h2 {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 300;
+}
+
+P {
+  font-family: "Kanit", sans-serif;
+  padding-top: 3px;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  font-size: 3rem;
+  font-family: "Kanit", sans-serif;
+  border-radius: 15px;
+  background-color: darkorange;
+  transition: background-color 0.5s ease;
+  padding: 10px 30px;
+}
+
+button:hover {
+  background-color: cyan;
+}
+
+.resetButton {
+  margin-top: 8px;
+  font-family: "Kanit", sans-serif;
+  border-radius: 15px;
+  background-color: lightgray;
+  transition: background-color 0.5s ease;
+  padding: 5px 20px;
+}
+
+#emoticon img {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.option {
+  display: inline-block;
+  margin: 10px 7px;
+  cursor: pointer;
+}
+
+.kotak {
+  background-color: rgba(255, 255, 254, 0.7);
+  transition: background-color 0.5s ease;
+  text-align: center;
+  display: table;
+  width: 200px;
+  height: 200px;
+  /* border: 2px solid rgb(180, 178, 178); */
+  border-radius: 20%;
+}
+
+.kotak:hover {
+  background-color: #fff;
+}
+
+.icon {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.icon p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.icon img {
+  width: 100px;
+}
+/* End Content */
+
+/* The Modal  */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: cyan;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  border: 1px solid #888;
+  border-radius: 15px;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* End Modal */
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .modal-content {
+    width: 80%;
+  }
+  .kotak {
+    width: 100px;
+    height: 100px;
+  }
+  .icon p {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .icon img {
+    width: 70px;
+  }
+
+  #emoticon img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

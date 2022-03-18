@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Suit</title>
+  <link rel="stylesheet" href="/gameStyle.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="wrapper">
+      <div id="emoticon">
+        <img src="./gift/dance-emoji.gif" alt="gift-menang" id="menang"/>
+        <img src="./gift/kalah.gif" alt="gift-menang" id="kalah"/>
+        <img src="./gift/seri.gif" alt="gift-menang" id="seri"/>
+      </div>
+      <h1 id="headline">
+        </h3>
+        <button id="showOption"></button>
+        <div id="reset">
+          <button class="resetButton"> Reset </button>
+        </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="text-center">Tentukan pilihanmu...</h2>
+      <div class="center">
+        <div class="option" onclick="check('Gunting')">
+          <div class="kotak">
+            <div class="icon">
+              <img src="./images/gunting.png" alt="gunting">
+              <p>GUNTING</p>
+            </div>
+          </div>
+        </div>
+        <div class="option" onclick="check('Batu')">
+          <div class="kotak">
+            <div class="icon">
+              <img src="./images/batu.png" alt="batu">
+              <p>BATU</p>
+            </div>
+          </div>
+        </div>
+        <div class="option" onclick="check('Kertas')">
+          <div class="kotak">
+            <div class="icon">
+              <img src="./images/kertas.png" alt="kertas">
+              <p>KERTAS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/suitGame.js"></script>
+
+</body>
+
+</html>
